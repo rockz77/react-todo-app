@@ -11,7 +11,7 @@ class Item extends Component {
 
   render() {
     return (
-      <div key={this.props.itemID} id={this.props.itemID}>
+      <div key={this.props.itemID} id={this.props.itemID} onClick={this.onClick}>
         <h3>{this.props.itemTitle}</h3>
         <p>{this.props.itemBody}</p>
       </div>
